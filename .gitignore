@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 ignore.py
+not-good.csv
 
 # Distribution / packaging
 .Python
