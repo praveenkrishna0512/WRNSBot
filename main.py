@@ -39,7 +39,11 @@ with open('questions.csv', mode='r') as csv_file:
         question_bank[level].add(question)
 
 print("-------QUESTION BANK-----------")
-print(question_bank)
+for level in question_bank.keys():
+    questions = question_bank[level]
+    print(f"LEVEL {level}")
+    for qn in questions:
+        print(qn)
 print("-------------------------------")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
